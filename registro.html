@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_registro.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <div class="contenedor_reg">
+        <h1> Complete sus datos</h1>
+        <div class="contenedor_form">
+            <form action="guardo.html" target="_blank">
+                Apellido : <input type="Text" size="30" name="Apellido" REQUIRED> <br>
+                Nombre : <input type="Text" size="30" name="Nombre"> <br>
+                Fecha de Nacimiento : <input type="date" size="30" name="Fechanac"> <br>
+                Email : <input type="email" name="email"> <br>
+                <textarea name="intereses" rows="10" cols="40">Escriba aquí sus temas de interés </textarea> <br>
+                Clave de Seguridad: <input type="password" name="clave1" size="25"><br>
+                Reingrese su clave: <input type="password" name="clave2" size="25"><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

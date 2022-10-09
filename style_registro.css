@@ -1,0 +1,52 @@
+/* 
+PALETA DE COLORES
+https://paletadecolores.online/verde/ 
+
+LOGO
+https://es.fiverr.com/logo-maker/customize/projects/60ba1d15ca1910000d0d7865/variations/60ba22b03260d4000be5f76e?brand_name=GRUPO%20VERDE&source=choose_variation&ref_ctx_id=&slogan=Agricultura%20sustentable&brief_id=11af8921-5e2a-4c00-b54e-9eaf171d91a2
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-family: 'Lora';
+  }
+  
+body {
+    background-color: #33b242;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor_reg {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.contenedor_reg h1 {
+    color: #8F0065;
+    text-decoration: underline;
+}
+
+.contenedor_form {
+    width: 80vw;
+    text-align: left;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    border: 10px solid #000;
+    margin: auto;
+    padding: 20px;
+}
+
+.contenedor_form input {
+    margin: 5px;
+    border: none;
+    background-color: inherit;
+    border-bottom: 1px solid #8F0065;
+}
