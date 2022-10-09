@@ -16,7 +16,7 @@ https://es.fiverr.com/logo-maker/customize/projects/60ba1d15ca1910000d0d7865/var
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
 }
 
 /*HEADER*/
@@ -100,3 +100,4 @@ header .btn-reg:hover {
   color: #8F0065;
   font-size: 20px;
 }
+
