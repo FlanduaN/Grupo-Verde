@@ -16,7 +16,7 @@ https://es.fiverr.com/logo-maker/customize/projects/60ba1d15ca1910000d0d7865/var
 }
 
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 /*HEADER*/
@@ -57,6 +57,85 @@ header .btn-reg:hover {
 
 #siembra {
   background-color: #98ff96;
+}
+
+.siembra {
+  padding: 1em;
+  width: 90%;
+  max-width: 120em;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+
+}
+
+.siembra h1 {
+  color: #8F0065;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+/*CARROUSEL*/
+
+.siembra .carrousel {
+  width: 400%;
+  background-color: #8F0065;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  border-radius: 20px;
+  transition: all .5s ease;
+  transform: translateX(0%);
+}
+
+.siembra .estacion {
+  width: calc(100% / 4 - 2em);
+  min-height: 10em;
+  border: solid 2px #008A1C;
+  border-radius: 1em;
+}
+
+.siembra .estacion img {
+  border-radius: 1em;
+}
+
+.siembra .selectores {
+  width: 100%;
+  margin: 0.5em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.siembra .selector {
+  list-style: none;
+  height: 1.5em;
+  width: 1.5em;
+  margin: 0.5em;
+  border: solid 2px #8F0065;
+  border-radius: 50%;
+}
+
+.siembra .selector i {
+  align-items: center;
+  justify-content: center;
+  color: #8F0065;
+  font-size: 1em;
+}
+
+.siembra .selector.activo {
+  background-color: #008A1C;
+}
+
+
+/* Sección vieja de SIEMBRA
+
+
+#siembra {
+  background-color: #98ff96;
   padding: 15px;
   justify-content: space-around;
   align-items: center;
@@ -70,7 +149,6 @@ header .btn-reg:hover {
 
 #siembra .menu_estacion {
   list-style: none;
-  width: 100vw;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -100,4 +178,99 @@ header .btn-reg:hover {
   color: #8F0065;
   font-size: 20px;
 }
+*/
 
+/*SMS*/
+
+#msm {
+  padding: 15px;
+  align-items: center;
+  height: auto;
+  justify-content: center;
+}
+
+#msm h2 {
+  text-align: center;
+  color: #8F0065;
+  margin-bottom: 20px;
+}
+
+#msm h3 {
+  color: #008A1C;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#msm p {
+  text-align: justify;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+#msm p a {
+  text-decoration: none;
+  color: #8F0065;
+  transition: 1s;
+  padding: 0 3px;
+  border-radius: 5px;
+}
+
+#msm p a:hover {
+  background-color: #98ff96;
+  /*mejorar efecto*/
+}
+
+#msm .masetas {
+  display: grid;
+  /*dividir pantalla para tener texto de un lado e imágenes del otro*/
+}
+
+#msm .ejmasetas {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#msm .ejmasetas img {
+  border: solid 2px #8F0065;
+  border-radius: 10px;
+}
+
+
+/*contacto*/
+
+#contacto {
+  align-items: center;
+  height: auto;
+  justify-content: center;
+  padding: 20px;
+  background-color: #33b242;
+}
+
+#contacto .redes {
+  display: flex;
+  justify-content: center;
+}
+
+#contacto .redes i {
+  font-size: 25px;
+  color: #8F0065;
+  padding: 0 20px;
+  transition: 1s;
+}
+
+#contacto .redes i:hover {
+  transform: scale(125%);
+}
+
+/*footer*/
+
+#footer {
+  padding: 5px;
+  background-color: #8F0065;
+  color: #33b242;
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+}
