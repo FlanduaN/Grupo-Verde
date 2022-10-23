@@ -22,7 +22,7 @@ html {
 /*HEADER*/
 
 header {
-  background-color: #8F0065;
+  background-color: #79ee6e;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -32,10 +32,11 @@ header {
 
 header h3 {
   color: #008A1C;
+  display: none;
 }
 
 header img {
-  max-height: 100px;
+  max-height: 80px;
   border-radius: 10px;
 }
 
@@ -44,32 +45,98 @@ header .btn-reg {
   background-color: #33b242;
   padding: 10px;
   border-radius: 5px;
-  color: #8F0065;
+  color: #fff;
   font-size: 20px;
   transition: 1s;
 }
 
 header .btn-reg:hover {
-  background-color: #98ff96;
+  background-color: #008A1C;
 }
 
-/* SECCION SIEMBRA */
-
-#siembra {
+/* SECCION PRINCIPAL */
+/*
+#principal {
   background-color: #98ff96;
 }
+*/
+.principal {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
 
-.siembra {
+.quienes {
   padding: 1em;
-  width: 90%;
-  max-width: 120em;
+  border: 2px solid #33b242;
+  justify-content: center;
+}
+
+.quienes h1 {
+  color: #008A1C;
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-size: 2.5em;
+}
+
+.quienes p {
+  text-align: center;
+  font-size: 20px;
+  padding: 1em;
+}
+
+.consulta {
+  padding: 1em;
+  border: 2px solid #33b242;
+  border-left: none;
+}
+
+.cont-consulta h2 {
+  color: #33b242;
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+
+
+.cont-formulario .email {
+  padding: 3px;
+  border: none;
+  border-bottom: 1px solid #008A1C;
+  max-width: 100%;
+}
+
+.cont-formulario .texto {
+  padding: 3px;
+  border: 1px solid #008A1C;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.cont-formulario .btn-cons {
+  border: #008A1C 1px solid;
+  padding: 2px;
+  border-radius: 5px;
+  color: #008A1C;
+  transition: 1s;
+  margin-right: 15px;
+}
+
+.cont-formulario .btn-cons:hover {
+  background-color: #008A1C;
+  color: #fff;
+}
+
+
+/*
+.siembra {
+  width: 100%;
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
-
+  padding: 1em;
+  background-color: #33b242;
 }
 
-.siembra h1 {
+.siembra h3 {
   color: #8F0065;
   text-align: center;
   margin-bottom: 0.5em;
@@ -77,28 +144,43 @@ header .btn-reg:hover {
 
 /*CARROUSEL*/
 
+/*
 .siembra .carrousel {
-  width: 400%;
+  width: 300%;
   background-color: #8F0065;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 2em;
+  padding: 1em;
   border-radius: 20px;
   transition: all .5s ease;
   transform: translateX(0%);
 }
 
 .siembra .estacion {
-  width: calc(100% / 4 - 2em);
+  width: calc(100% / 3 - 2em);
   min-height: 10em;
-  border: solid 2px #008A1C;
   border-radius: 1em;
+}
+
+.siembra .estacion a {
+  align-items: center;
+  justify-content: center;
 }
 
 .siembra .estacion img {
   border-radius: 1em;
+  border: 2px solid #98ff96;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.siembra .estacion h3 {
+  text-align: center;
+  color: #33b242;
 }
 
 .siembra .selectores {
@@ -129,9 +211,9 @@ header .btn-reg:hover {
 .siembra .selector.activo {
   background-color: #008A1C;
 }
+*/
 
-
-/* Sección vieja de SIEMBRA
+/*Sección vieja de SIEMBRA*/
 
 
 #siembra {
@@ -157,12 +239,12 @@ header .btn-reg:hover {
 #siembra .estacion {
   display: flex;
   flex-direction: row;
-  width: 25%;
+  max-width: 25%;
+  margin: 2px;
 }
 
 #siembra .estacion img {
-  height: 180px;
-  width: 300px;
+  max-width: 100%;
   border: solid 2px #8F0065;
   border-radius: 10px;
   overflow: hidden;
@@ -178,15 +260,12 @@ header .btn-reg:hover {
   color: #8F0065;
   font-size: 20px;
 }
-*/
+
 
 /*SMS*/
 
 #msm {
-  padding: 15px;
-  align-items: center;
-  height: auto;
-  justify-content: center;
+  padding: 1em;
 }
 
 #msm h2 {
@@ -205,6 +284,7 @@ header .btn-reg:hover {
   text-align: justify;
   margin-bottom: 5px;
   font-size: 15px;
+  padding-right: 1em;
 }
 
 #msm p a {
@@ -217,24 +297,46 @@ header .btn-reg:hover {
 
 #msm p a:hover {
   background-color: #98ff96;
-  /*mejorar efecto*/
 }
 
 #msm .masetas {
   display: grid;
-  /*dividir pantalla para tener texto de un lado e imágenes del otro*/
+  grid-template-columns: 50% 50%;
 }
 
 #msm .ejmasetas {
   display: flex;
-  justify-content: space-around;
   margin-top: 25px;
   margin-bottom: 25px;
+  justify-content: space-between;
 }
 
 #msm .ejmasetas img {
   border: solid 2px #8F0065;
   border-radius: 10px;
+}
+
+
+/*Sitios de Interes*/
+
+#interes {
+  padding: 1em;
+}
+
+.sitios {
+  display: flex;
+  border: solid 2px #8F0065;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.sitios img {
+  width: calc(100% / 3 - 2em);
+  border: solid 3px #008A1C;
+  align-items: center;
 }
 
 

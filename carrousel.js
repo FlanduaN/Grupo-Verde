@@ -6,7 +6,7 @@ selector.forEach( (cadaSelector , i ) => {
     selector[i].addEventListener('click',()=>{
 
         let posicion = i
-        let operacion = posicion * -25
+        let operacion = posicion * -33.333
 
         carrousel.style.transform = `translateX(${ operacion }%)`
 

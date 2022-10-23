@@ -14,20 +14,45 @@ https://es.fiverr.com/logo-maker/customize/projects/60ba1d15ca1910000d0d7865/var
     font-family: sans-serif;
     box-sizing: border-box;
     font-family: 'Lora';
-  }
-  
+}
+
 body {
-    background-color: #33b242;
     padding: 0;
     margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contenedor_reg {
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    border-radius: 15px;
+    font-size: large;
+    
 }
 
+.modulo {
+    background-color: blueviolet;
+}
+
+.valor {
+    background-color: black;
+}
+
+.campo {
+    text-decoration: none;
+
+}
+
+
+
+/*
 .contenedor_reg h1 {
     color: #8F0065;
     text-decoration: underline;
@@ -50,3 +75,4 @@ body {
     background-color: inherit;
     border-bottom: 1px solid #8F0065;
 }
+/*

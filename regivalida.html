@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="style_registro.css">
+       <title>Validar Formulario</title>
+
+       <script>
+              function valida_envia() {
+                     //valido el nombre
+                     //document.fvalida.apellido.value="PANDOLFO ARNALDO"
+                     if (document.fvalida.apellido.value.length == 0) {
+                            alert("Tiene que escribir su apellido")
+                            document.fvalida.apellido.focus()
+                            return 0;
+                     }
+
+                     if (document.fvalida.nombre.value.length == 0) {
+                            alert("Tiene que escribir su nombre")
+                            document.fvalida.nombre.focus()
+                            return 0;
+                     }
+                     if (document.fvalida.nombre.value.length < 5) {
+                            alert("Nombre invalido!")
+                            document.fvalida.nombre.focus()
+                            return 0;
+                     }
+
+                     edad = document.fvalida.edad.value
+
+                     if (edad < 18) {
+                            alert("Debe ser mayor de 18 años.")
+                            document.fvalida.edad.focus()
+                            return 0;
+                     }
+
+                     //valido el interés
+                     if (document.fvalida.interes.selectedIndex == 0) {
+                            alert("Debe seleccionar un motivo de su contacto.")
+                            document.fvalida.interes.focus()
+                            return 0;
+                     }
+
+                     mclave1 = document.fvalida.clave1.value
+                     mclave2 = document.fvalida.clave2.value
+                     if (mclave1 != mclave2) {
+                            alert("Las claves no coinciden. Verifique.")
+                            document.fvalida.clave1.focus()
+                            return 0;
+                     }
+
+
+                     //el formulario se envia
+                     alert("Muchas gracias por enviar el formulario");
+                     document.fvalida.submit();
+              }
+       </script>
+</head>
+
+<div class="contenedor_reg">
+
+       <form name="fvalida">
+              <table>
+                     <div class="modulo">
+                            <tr>
+                                   <div class="valor">
+                                          <td>Apellido: </td>
+                                   </div>
+                                   <div class="campo">
+                                          <td><input type="text" name="apellido" size="30" maxlength="100"></td>
+                                   </div>
+                            </tr>
+                     </div>
+                     <tr>
+                            <td>Nombre: </td>
+                            <td><input type="text" name="nombre" size="30" maxlength="100"></td>
+                     </tr>
+                     <tr>
+                            <td>Edad: </td>
+                            <td><input type="text" name="edad" size="3" maxlength="2"></td>
+                     </tr>
+
+                     <tr>
+                            <td>Interés: </td>
+                            <td>
+                                   <select name=interes>
+                                          <option value="Elegir">Elegir
+                                          <option value="Agricultura en Espacios Reducidos">Agricultura en Espacios
+                                                 Reducidos
+                                          <option value="Compra Venta de productos Orgánicos">Compra Venta de productos
+                                                 Orgánicos
+                                          <option value="Ecología en General">Ecología en General
+                                   </select>
+                            </td>
+                     </tr>
+                     <tr>
+                            <td>Clave: </td>
+                            <td> <input type="password" name="clave1" size="25" maxlength="8"><br></td>
+                     </tr>
+                     <tr>
+                            <td>Reingrese su Clave: </td>
+                            <td> <input type="password" name="clave2" size="25" maxlength="8"><br></td>
+                     </tr>
+                     <tr>
+                            <td colspan="2" align="center"><input type="button" value="Enviar" onclick="valida_envia()">
+                            </td>
+                     </tr>
+              </table>
+
+       </form>
+</div>

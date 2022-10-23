@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ecc3b297ad.js" crossorigin="anonymous"></script>
     <title>Agricultura Hogareña Colaborativa</title>
@@ -15,82 +15,125 @@
     <section id="inicio_home">
         <header>
             <img src="img/logo.jpg" alt="LOGO">
-            <!-- <h3>GrupoVerde</h3> -->
-            <a href="registro.html" class="btn-reg">Registro</a>
+            <h3>GrupoVerde</h3>
+            <!-- <a href="registro.html" class="btn-reg">Registro</a> -->
+            <a href="regivalida.html" class="btn-reg">Regístrese! </a>
+            <a href="consulta.html" class="btn-reg">Envie su Consulta</a>
+            <!--<a href="nueregistro.html" class="btn-reg">Registro</a>-->
+
         </header>
     </section>
+
+    <section id="principal">
+        <div class="principal">
+            <div class="quienes">
+                <h1>¿Quines Somos?</h1>
+                <p>Somos un grupo de entusiasta jardineros que fomenta el cultivo sustentable. Buscamos conformar una
+                    comunidad que comparta sus experiencias y ayude a quienes están iniciando esta camino, así como
+                    también un espacio donde se puedan intercambiar productos de forma libre.</p>
+            </div>
+            <div class="consulta">
+                <div class="cont-consulta">
+                    <h2>Envie su Consulta</h2>
+                    <div class="cont-formulario">
+                        <form action="https://formspree.io/f/maykdllk" method="POST" id="formulario">
+
+                            <input class="email" placeholder="Ingrese su Email" type="email" name="email" size="50"
+                                required> <br><br>
+                            <textarea class="texto" rows="10" cols="49" name="message" id="message"
+                                placeholder="Escriba aquí su tema de consulta" required=""></textarea> <br><br>
+                            <input class="btn-cons" type="submit" value="Enviar">
+                            <input class="btn-cons" type="reset" value="Borrar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+    <section id="siembra">
+        <div class="siembra">
+            <h1>Siembra</h1>
+            <div class="quesembrar">
+                <div>
+                    <h2>Qué sembrar según la estación del año</h2>
+                </div>
+                <div class="cont-siembra">
+                    <div class="cont-estaciones">
+                        <div class="estacion">
+                            <a href="prim-ver.html"><img src="img/campo en verano.jpg" alt=""></a>
+                            <h3>Primavera - Verano</h3>
+                        </div>
+                        <div class="estacion">
+                            <a href="oto-inv.html" class="estacion"><img src="img/campo en otoño.jpg" alt=""></a>
+                            <h3>Otoño - Invierno</h3>
+                        </div>
+                        <div class="estacion">
+                            <a href="anual.html" class="estacion"><img src="img/campo en primavera.jpg" alt=""></a>
+                            <h3>Todo el año</h3>
+                        </div>
+                    </div>
+                    <div class="tipossiembra">
+                        <h2>Tipos de siembra</h2>
+                        <div class="estacion">
+                            <a href="siembra.html" class="estacion"><img src="img/campo en invierno.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+
+
+               
+                </div>
+                <ul class="selectores">
+                    <li class="selector activo"></li>
+                    <li class="selector"></li>
+                    <li class="selector"></li>
+
+                <li class="selector"><i class="fa-regular fa-flower-tulip"></i></li>
+                            </ul>
+
+
+    </div>
+    </section>
+
+    -->
 
     <section id="siembra">
         <div class="siembra">
             <div>
-                <h1>Qué sembrar según la estación del año</h1>
-            </div>
-            <div class="carrousel">
-                <a href="verano1.html" class="estacion"><img src="img/campo en verano.jpg" alt=""></a>
-                <a href="otono1.html" class="estacion"><img src="img/campo en otoño.jpg" alt=""></a>
-                <a href="invierno1.html" class="estacion"><img src="img/campo en invierno.jpg" alt=""></a>
-                <a href="primavera1.html" class="estacion"><img src="img/campo en primavera.jpg" alt=""></a>
-            </div>
-            <ul class="selectores">
-                <li class="selector activo"><i class="fa-solid fa-sun"></i></li>
-                <li class="selector"><i class="fa-regular fa-leaf-maple"></i></li>
-                <li class="selector"><i class="fa-regular fa-snowflake"></i></li>
-                <li class="selector"><i class="fa-regular fa-flower-tulip"></i></li>
-
-            </ul>
-        </div>
-
-
-
-
-    </section>
-
-
-
-
-
-
-
-
-
-
-    <!--
-    <section id="siembra">        
-        <div class="siembra">
-            <div>
-                <h1>Qué sembrar según la estación del año</h1>
+                <h1>Qué sembrar durante el año y tipo de siembra</h1>
             </div>
             <div>
                 <ul class="menu_estacion">
                     <li class="estacion">
-
-                        <!--<img src="img/campo en verano.jpg" alt="">
-                        <a href="verano1.html" class="submenu_a"><img src="img/campo en verano.jpg" alt="">Verano</a>
+                        <a href="prim-ver.html" class="submenu_a"><img src="img/campo en verano (1).jpg"
+                                alt="">Primavera-Verano</a>
                     </li>
                     <li class="estacion">
-                        <!--<img src="img/campo en otoño.jpg" alt="">
-                        <a href="otono1.html" class="submenu_a"><img src="img/campo en otoño.jpg" alt="">Otoño</a>
+                        <a href="oto-inv.html" class="submenu_a"><img src="img/campo en otoño.jpg"
+                                alt="">Otoño-Invierno</a>
                     </li>
                     <li class="estacion">
-                        <!--<img src="img/campo en invierno.jpg" alt="">
-                        <a href="invierno1.html" class="submenu_a"><img src="img/campo en invierno.jpg"alt="">Invierno</a>
+                        <a href="anual.html" class="submenu_a"><img src="img/campo anual.jpg"
+                                alt="">Anual</a>
                     </li>
                     <li class="estacion">
-                        <!--<img src="img/campo en primavera.jpg" alt="">
-                        <a href="primavera1.html" class="submenu_a"><img src="img/campo en primavera.jpg" alt="">Primavera</a>
+                        <a href="siembra.html" class="submenu_a"><img src="img/siembra.jpg" alt="">Tipos de Siembra</a>
                     </li>
                 </ul>
                 </li>
             </div>
         </div>
     </section>
-    -->
 
     <section id="msm">
-        <h2>Macetas, sustrato y módulos</h2>
+        <h2>Macetas y módulos</h2>
+        <h3>Masetas</h3>
         <div class="masetas">
             <div class="texto">
-                <h3>Masetas</h3>
                 <p>Lejos de ser un aspecto secundario, suponen un elemento crucial para el desarrollo de una planta.
                     Algo que nos obliga a conocer un poco más a fondo los tipos de macetas que existen y cuáles son sus
                     distintas
@@ -107,16 +150,16 @@
                 </p>
             </div>
             <div class="ejmasetas">
-                <img src="img/balcon22.jpg" width="10%">
-                <img src="img/huevos1.jpg">
-                <img src="img/botellas1.jpg">
-                <img src="img/pecera1.jpg">
+                <img src="img/balcon22.jpg" width="15%">
+                <img src="img/huevos1.jpg" width="25%">
+                <img src="img/botellas1.jpg" width="25%">
+                <img src="img/pecera1.jpg" width="25%">
             </div>
         </div>
 
         <!--<img scr="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.terracorp.cl%2Fblog%2Fwp-content%2Fuploads%2F2022%2F02%2Fhuerto-vertical_2.jpg&imgrefurl=https%3A%2F%2Fwww.terracorp.cl%2Fblog%2Fhuertos-verticales-para-departamentos%2F&tbnid=aSPvrqx3NhUd7M&vet=12ahUKEwi2gui5sOf5AhVlR7gEHXUUCtkQMygGegUIARDCAQ..i&docid=1FuJ2z20lv_3yM&w=259&h=194&q=imagenes%20huertas%20en%20departamentos&ved=2ahUKEwi2gui5sOf5AhVlR7gEHXUUCtkQMygGegUIARDCAQ"
             width="200" height="250">-->
-
+        <!--
         <div class="sustrato">
 
             <iframe class="video" width="200" height="200" src="https://www.youtube.com/embed/r2bv9pElO5E"
@@ -124,20 +167,37 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
+        -->
+
     </section>
 
 
     <section id="interes">
-        <h3>titulo 3: Sitios de Interés</h3>
-        <div>
-        <a href="https://www.argentina.gob.ar/inta/contenidos-educativos" target="blank"> Ir a INTA </a>
-    </div>
+        <h3>Sitios de Interés</h3>
+        <div class="sitios">
+            <div class="sitio">
+                <a href="https://www.argentina.gob.ar/inta/contenidos-educativos"><img src="img/logointa2.jpg"
+                        alt="logointa2"></a>
+            </div>
+            <div class="sitio">
+                <a
+                    href="https://www.agro.uba.ar/catalog/aportes-de-los-objetivos-de-desarrollo-sostenible-para-una-agricultura-sustentable-en-la"><img
+                        src="img/uba-fauba.png" alt="uba-fuba"></a>
+            </div>
+            <div class="sitio">
+                <a href="https://www.greenpeace.org/argentina/tag/agroecologia/"><img src="img/gp-logo.png"
+                        alt="gp-logo"></a>
+            </div>
+        </div>
+
+        <!--
         <h4> Registrese y obtenga las siguientes ventajas!
             <a href="registro.html" class="botoncito">Cliquee Aquí para Registrarse!</a>
             <p> Compra, venta e intercambio de productos agrícolas caseros </p>
             <p> Foro interactivo con otros agricultores </p>
             <p> Asesoramiento Especializado</p>
         </h4>
+        -->
     </section>
 
     <section id="contacto">
