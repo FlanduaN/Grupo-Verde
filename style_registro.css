@@ -31,9 +31,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
+    background-color: rgb(0, 255, 170);
     border-radius: 15px;
-    font-size: large;
+    border-color: rgb (0,0,0);
+    font-size: larger;
     
 }
 
@@ -49,30 +50,3 @@ body {
     text-decoration: none;
 
 }
-
-
-
-/*
-.contenedor_reg h1 {
-    color: #8F0065;
-    text-decoration: underline;
-}
-
-.contenedor_form {
-    width: 80vw;
-    text-align: left;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    border: 10px solid #000;
-    margin: auto;
-    padding: 20px;
-}
-
-.contenedor_form input {
-    margin: 5px;
-    border: none;
-    background-color: inherit;
-    border-bottom: 1px solid #8F0065;
-}
-/*

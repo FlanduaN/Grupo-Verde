@@ -26,7 +26,7 @@ header {
   padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px 25px;
 }
 
@@ -38,6 +38,7 @@ header h3 {
 header img {
   max-height: 80px;
   border-radius: 10px;
+  border: 1px solid #33b242;
 }
 
 header .btn-reg {
@@ -49,171 +50,121 @@ header .btn-reg {
   font-size: 20px;
   transition: 1s;
 }
+header .box-shadow-menu {
+  position: relative;
+  padding-left: 1.25em;
+}
+header .box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 1em;
+  height: 0.15em;
+  background: black;
+  box-shadow: 
+    0 0.25em 0 0 black,
+    0 0.5em 0 0 black;
+}
 
 header .btn-reg:hover {
   background-color: #008A1C;
 }
 
 /* SECCION PRINCIPAL */
-/*
-#principal {
-  background-color: #98ff96;
+
+#principal .btn-reg {
+  text-decoration: none;
+  background-color: #33b242;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  transition: 1s;
 }
-*/
-.principal {
+
+#principal .btn-reg:hover {
+  background-color: #008A1C;
+}
+
+#principal .presentacion {
   display: grid;
   grid-template-columns: 70% 30%;
 }
 
-.quienes {
+#principal .quienes {
   padding: 1em;
   border: 2px solid #33b242;
   justify-content: center;
 }
 
-.quienes h1 {
+#principal .quienes h1 {
   color: #008A1C;
   text-align: center;
   margin-bottom: 0.5em;
   font-size: 2.5em;
 }
 
-.quienes p {
+#principal .quienes p {
   text-align: center;
   font-size: 20px;
   padding: 1em;
 }
 
-.consulta {
+#principal .quienes .cont_a {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+#principal .consulta {
   padding: 1em;
   border: 2px solid #33b242;
   border-left: none;
 }
 
-.cont-consulta h2 {
+#principal .cont-consulta h2 {
   color: #33b242;
   text-align: center;
   padding-bottom: 0.5em;
 }
 
-
-.cont-formulario .email {
+#principal .cont-formulario .email {
   padding: 3px;
   border: none;
   border-bottom: 1px solid #008A1C;
   max-width: 100%;
 }
 
-.cont-formulario .texto {
+#principal .cont-formulario .texto {
   padding: 3px;
   border: 1px solid #008A1C;
   border-radius: 5px;
   max-width: 100%;
 }
 
-.cont-formulario .btn-cons {
+#principal .contbtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#principal .cont-formulario .btn-cons {
   border: #008A1C 1px solid;
   padding: 2px;
   border-radius: 5px;
   color: #008A1C;
   transition: 1s;
-  margin-right: 15px;
 }
 
-.cont-formulario .btn-cons:hover {
+#principal .cont-formulario .btn-cons:hover {
   background-color: #008A1C;
   color: #fff;
 }
 
 
-/*
-.siembra {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  overflow-x: hidden;
-  padding: 1em;
-  background-color: #33b242;
-}
-
-.siembra h3 {
-  color: #8F0065;
-  text-align: center;
-  margin-bottom: 0.5em;
-}
-
-/*CARROUSEL*/
-
-/*
-.siembra .carrousel {
-  width: 300%;
-  background-color: #8F0065;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1em;
-  border-radius: 20px;
-  transition: all .5s ease;
-  transform: translateX(0%);
-}
-
-.siembra .estacion {
-  width: calc(100% / 3 - 2em);
-  min-height: 10em;
-  border-radius: 1em;
-}
-
-.siembra .estacion a {
-  align-items: center;
-  justify-content: center;
-}
-
-.siembra .estacion img {
-  border-radius: 1em;
-  border: 2px solid #98ff96;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.siembra .estacion h3 {
-  text-align: center;
-  color: #33b242;
-}
-
-.siembra .selectores {
-  width: 100%;
-  margin: 0.5em;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.siembra .selector {
-  list-style: none;
-  height: 1.5em;
-  width: 1.5em;
-  margin: 0.5em;
-  border: solid 2px #8F0065;
-  border-radius: 50%;
-}
-
-.siembra .selector i {
-  align-items: center;
-  justify-content: center;
-  color: #8F0065;
-  font-size: 1em;
-}
-
-.siembra .selector.activo {
-  background-color: #008A1C;
-}
-*/
-
-/*Sección vieja de SIEMBRA*/
 
 
 #siembra {
@@ -223,9 +174,9 @@ header .btn-reg:hover {
   align-items: center;
 }
 
-#siembra h1 {
+#siembra h2 {
   text-align: center;
-  color: #8F0065;
+  color: #003400;
   margin-bottom: 20px;
 }
 
@@ -245,20 +196,20 @@ header .btn-reg:hover {
 
 #siembra .estacion img {
   max-width: 100%;
-  border: solid 2px #8F0065;
+  border: solid 2px #008A1C;
   border-radius: 10px;
   overflow: hidden;
   transition: 1s;
 }
 
 #siembra .estacion img:hover {
-  transform: scale(110%);
+  transform: scale(115%);
 }
 
 #siembra .estacion a {
   text-decoration: none;
-  color: #8F0065;
   font-size: 20px;
+  color: #008A1C;
 }
 
 
@@ -266,18 +217,19 @@ header .btn-reg:hover {
 
 #msm {
   padding: 1em;
+  border-top: 2px solid #33b242;
+  border-bottom: 2px solid   #33b242;
 }
 
 #msm h2 {
   text-align: center;
-  color: #8F0065;
+  color: #003400;
   margin-bottom: 20px;
 }
 
-#msm h3 {
-  color: #008A1C;
-  margin-bottom: 10px;
-  font-size: 20px;
+#msm .masetas {
+  display: grid;
+  grid-template-columns: 50% 50%
 }
 
 #msm p {
@@ -285,6 +237,7 @@ header .btn-reg:hover {
   margin-bottom: 5px;
   font-size: 15px;
   padding-right: 1em;
+  max-width: 100%;
 }
 
 #msm p a {
@@ -299,21 +252,23 @@ header .btn-reg:hover {
   background-color: #98ff96;
 }
 
-#msm .masetas {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
 #msm .ejmasetas {
   display: flex;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#msm .ejmasetas img {
-  border: solid 2px #8F0065;
+#msm .ejmasetas .imgmaseta {
+  display: flex;
+  flex-direction: row;
+  margin: 2px;
+}
+
+#msm .ejmasetas .imgmaseta img {
+  max-width: 100%;
+  border: solid 2px #008A1C;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 
@@ -323,20 +278,23 @@ header .btn-reg:hover {
   padding: 1em;
 }
 
-.sitios {
-  display: flex;
-  border: solid 2px #8F0065;
+#interes h3 {
+  text-align: center;
+  color: #003400;
+  margin-bottom: 5px;
+  }
+
+#interes .sitios {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
-
+  justify-content: space-around;
 }
 
 .sitios img {
-  width: calc(100% / 3 - 2em);
-  border: solid 3px #008A1C;
-  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0.5em;
 }
 
 
@@ -347,7 +305,7 @@ header .btn-reg:hover {
   height: auto;
   justify-content: center;
   padding: 20px;
-  background-color: #33b242;
+  background-color: #008A1C;
 }
 
 #contacto .redes {
@@ -357,7 +315,7 @@ header .btn-reg:hover {
 
 #contacto .redes i {
   font-size: 25px;
-  color: #8F0065;
+  color: #79ee6e;
   padding: 0 20px;
   transition: 1s;
 }
@@ -370,9 +328,48 @@ header .btn-reg:hover {
 
 #footer {
   padding: 5px;
-  background-color: #8F0065;
-  color: #33b242;
+  background-color: #003400;
+  color: #fff;
   display: flex;
   justify-content: center;
   font-size: 10px;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width:1000px) {
+  #msm .ejmasetas {
+    flex-direction: column;
+  }
+
+}
+
+
+@media screen and (max-width:800px) {
+  #msm .masetas {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #msm .ejmasetas {
+    flex-direction: row;
+  }
+
+  #msm .ejmasetas .imgmaseta {
+    margin-top: 10px;
+  }
+
+}
+
+@media screen and (max-width:200px) {
+  #principal .presentacion {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+
+
 }
